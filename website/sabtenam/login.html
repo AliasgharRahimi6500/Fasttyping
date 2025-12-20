@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body dir="rtl">
+    <div class="container">
+        <div class="section" id="login-section">
+            <h2>ورود به حساب</h2>
+            <form id="login-form">
+                <label for="login-username">نام کاربری:</label>
+                <input type="text" id="login-username" required>
+                
+                <label for="login-password">رمز عبور:</label>
+                <div class="password-container">
+                    <input type="password" id="login-password" required>
+                    <span class="toggle-password" onclick="togglePassword('login-password')">👁️</span>
+                </div>
+                
+                <div class="error" id="login-error"></div>
+                <button type="submit">ورود</button>
+            </form>
+        </div>
+        
+        <div class="register-link">
+            <a href="register.html">ثبت‌نام جدید</a>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

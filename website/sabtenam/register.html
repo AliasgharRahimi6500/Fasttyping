@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ثبت‌نام</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body dir="rtl"> 
+    <div class="container">
+        <div class="section" id="register-section">
+            <h2>ثبت‌نام</h2>
+            <form id="register-form">
+                <label for="firstName">نام:</label>
+                <input type="text" id="firstName" required>
+                
+                <label for="lastName">نام خانوادگی:</label>
+                <input type="text" id="lastName" required>
+                
+                <label for="phone">شماره تماس:</label>
+                <input type="tel" id="phone" required pattern="[0-9]{11}">
+                
+                <label for="username">نام کاربری:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">رمز عبور:</label>
+                <div class="password-container">
+                    <input type="password" id="password" required>
+                    <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+                </div>
+                
+                <div id="captcha-section">
+                    <label id="captcha-question"></label>
+                    <input type="text" id="captcha-answer" required>
+                </div>
+                
+                <div class="error" id="register-error"></div>
+                <button type="submit">ثبت‌نام</button>
+            </form>
+        </div>
+        
+        <div class="login-link">
+            <a href="login.html">ورود به حساب</a>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
