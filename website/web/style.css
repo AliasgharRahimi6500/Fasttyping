@@ -1,0 +1,104 @@
+/* کل بدنه */
+body{
+    text-align: center;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* هدر ثابت */
+header {
+    position: fixed; /* ثابت در بالا */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* فاصله محتوا از هدر */
+body {
+    margin-top: 60px; /* ارتفاع هدر */
+}
+
+/* منوی اصلی */
+ul.topnav{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* دکمه‌ها وسط صفحه */
+    align-items: center;
+}
+
+/* لینک‌ها */
+ul.topnav li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.topnav li a:hover{
+    background-color: gray;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+/* input جستجو */
+ul.topnav input{
+    margin: 10px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 0 8px;
+}
+
+/* مزایا و معایب */
+.advantages, .disadvantages {
+    list-style-position: inside;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px; 
+}
+
+.advantages li, .disadvantages li {
+    margin: 10px 0;
+}
+
+/* تصاویر */
+img{
+    width: 400px;
+    height: 500px;
+    transition: 0.3s;
+}
+
+img:hover{
+    width: 700px;
+    height: 600px;
+}
+
+/* پس‌زمینه بخش‌ها */
+#disadvantege{
+    background-color: lightgreen;
+    padding: 20px 0;
+}
+#advantege{
+    background-color: lightcoral;
+    padding: 20px 0;
+}
+#goal{
+    background-color: lightskyblue;
+    padding: 20px 0;
+}
+#image{
+    background-color: brown;
+    padding: 20px 0;
+}
+#film{
+    background-color:sienna;
+    padding: 20px 0;
+}
